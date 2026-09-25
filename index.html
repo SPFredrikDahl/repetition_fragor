@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="En enkel kortlek för fokuserad repetition."
+    />
+    <title>Frågor | Repetition</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Summering av kursens repetitioner</p>
+          <h1>Frågor</h1>
+        </div>
+        <p class="deck-label" id="deck-label">Laddar kortlek...</p>
+      </header>
+
+      <section class="study-area" aria-label="Studieområde för frågekort">
+        <div class="progress-row">
+          <span id="progress-text">Förbereder dina kort</span>
+          <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-value" id="progress-value"></div>
+        </div>
+
+        <button
+          class="flashcard"
+          id="flashcard"
+          type="button"
+          aria-label="Visa svar"
+        >
+          <span class="card-face card-front">
+            <span class="card-kicker">Fråga</span>
+            <span class="card-content" id="question">Laddar...</span>
+            <span class="card-hint">Klicka för att visa svaret</span>
+          </span>
+          <span class="card-face card-back">
+            <span class="card-kicker">Svar</span>
+            <span class="card-content" id="answer"></span>
+            <span class="card-hint">Klicka för att se frågan</span>
+          </span>
+        </button>
+
+        <div class="controls" aria-label="Kortnavigering">
+          <button
+            class="nav-button"
+            id="previous-button"
+            type="button"
+            aria-label="Föregående fråga"
+          >
+            <span aria-hidden="true">&#8592;</span>
+            <span>Föregående</span>
+          </button>
+          <button
+            class="nav-button nav-button-primary"
+            id="next-button"
+            type="button"
+            aria-label="Nästa fråga"
+          >
+            <span>Nästa</span>
+            <span aria-hidden="true">&#8594;</span>
+          </button>
+        </div>
+        <p class="keyboard-hint">
+          Använd vänster- och högerpilarna för att bläddra mellan korten.
+        </p>
+        <p class="error-message" id="error-message" role="alert" hidden></p>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

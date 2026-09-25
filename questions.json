@@ -1,0 +1,169 @@
+[
+  {
+    "question": "Beskriv vad CIA-triaden är och varför den är viktig kopplat till säkerhet.",
+    "answer": "Detta beskriver de tre huvudområdena när man pratar om säkerhet i applikationer. I princip alla säkerhetshot kan kopplas till någon av dessa. Confidentiality = att bara behöriga personer kan komma åt data. Integrity = innebär att den information som hanteras är korrekt. Availability = att informationen är tillgänglig. Kan handla om att servrar är tillgängliga och att informationen kan läsas."
+  },
+  {
+    "question": "Beskriv begreppen hot, sårbarhet och risk. Hur används detta i säkerhetsarbete?",
+    "answer": "Hot är en typ av angrepp som kan inträffa. Sårbarhet är en säkerhetslucka i en lösning som gör att det är möjligt att attackera. Risk handlar om vad som kan hända vid ett angrepp (konsekvens) samt sannolikheten för att det ska hända. Det används i säkerhetsarbete genom att göra riskanalyser som sedan används för prioriteringar."
+  },
+  {
+    "question": "Vad innebär begreppen attackyta och trust boundary?",
+    "answer": "Attackyta är de delar i en lösning där en angripare kan hitta en ingång. Ju mer integrationer, externa tjänster och öppen arkitektur desto större attackyta. En lösning består av olika delar som man kallar för trustzones, där det kan finnas olika säkerhetsnivå. Gränserna mellan dessa zoner kallas för trust boundaries, och vid en säkerhetsanalys är det viktigt att identifiera dessa."
+  },
+  {
+    "question": "Beskriv vad threat modeling är och hur det kan användas?",
+    "answer": "Det är en säkerhetsanalys där man identifierar hot och tittar på sårbarheter och gör en riskanalys utifrån dessa. Detta är första steget i att ta fram en säkerhetslösning för ett företag."
+  },
+  {
+    "question": "Vad är STRIDE och vilka kategorier finns det där? Vad innebär varje kategori?",
+    "answer": "Det är en modell för att genomföra threat modeling som är framtagen av Microsoft. Bygger på 6 olika kategorier och det handlar om att hitta hot som kopplas till dessa kategorier."
+  },
+  {
+    "question": "Vad är OWASP och vad är OWASP top ten?",
+    "answer": "Det är en oberoende internationell organisation som arbetar med att utbilda och sprida information kring cybersäkerhet. Dom tar varje år fram en topplista över de 10 vanligaste säkerhetshoten."
+  },
+  {
+    "question": "Beskriv vad Zero trust modellen innebär.",
+    "answer": "Detta är första steget kring att sätta upp en säkerhetsstrategi. Handlar om hur man skall tänka kring upplägget. Grundsättet att tänka är \"verifiera alltid och lita inte på någon\". Finns tre principer som är viktiga: 1. Verifiera explicit: Gör alltid en bedömning kring verifiering och ta med faktorer t.ex. vilken enhet man är på och geografisk position (location factor). Gör inte bara vid ett tillfälle och om det visar på avvikande aktivitet. 2. Least privilege: Ge aldrig mer behörighet än nödvändigt. 3. Anta intrång: Räkna med att man kan ta sig in och försvåra för en angripare som tagit sig in."
+  },
+  {
+    "question": "Beskriv begreppet least privilege. Ge exempel på situationer när det kan vara viktigt?",
+    "answer": "Handlar om att aldrig ge en applikation eller användare mer behörighet än vad den behöver för olika situationer. En vanlig sårbarhet är att ge en applikation för mycket behörighet mot en databas. Applikationen skall aldrig ha mer behörighet än den funktionalitet som finns i applikationen."
+  },
+  {
+    "question": "Vad är Assume breach och hur påverkar det arbetet med säkerhetstestning? Ge exempel på en minst åtgärd som kan vara vanlig om man följer detta koncept.",
+    "answer": "Innebär att man utgår från att en angripare kan ta sig in förbi första lagren av säkerhet. Man testar för att förhindra att en angripare tar sig vidare. Vanliga åtgärder kan vara att tillämpa loggning (spåra misstänkt aktivitet i realtid), segmentering av nätverk och utökad kryptering."
+  },
+  {
+    "question": "Beskriv vad Defense in depth modellen är och vilken koppling den har till Zero trust modellen.",
+    "answer": "Zero trust handlar om hur man tänker kring en säkerhetsstrategi, medan Defense in depth handlar om hur man sedan genomför denna strategi genom att skapa olika lager kring säkerhet."
+  },
+  {
+    "question": "Nämn några saker som är viktiga när man genomför en säkerhetsstrategi. Vad kan vara viktigt att tänka på?",
+    "answer": "Viktigt är att göra en riskanalys och ta fram prioriteringar. Utbilda personalen så att de blir medvetna om säkerhet. Tänka kring behörigheter och att skapa säkerhetslösningar med flera lager. Anta intrång vid testning och titta på olika attack paths, dvs vilka vägar kan vara intressanta för en angripare när de tagit sig in. Arbeta med att testa dessa och fylla igen säkerhetsluckor."
+  },
+  {
+    "question": "Beskriv vilka typer av angripare som kan finnas och vad de kan vara ute efter.",
+    "answer": "Det finns hackers som kan delas in i tre huvudtyper: White hat = etiska hackare, pentestare som har som jobb att hitta säkerhetsluckor. Black hat = cyberkriminella. Grey hat = mellanting som bryter sig in men inte har onda avsikter. Kan även vara främmande stater som är ute efter att störa och skapa kaos, samt aktivister som har någon form av ideologiskt budskap. Script kiddies är unga personer som använder skript som de t.ex. hittar på Darknet. En angripare kan även vara ute efter att stjäla uppgifter eller förstöra samt ägna sig åt utpressning."
+  },
+  {
+    "question": "Vad är social engineering och VAP? Beskriv dessa begrepp och varför de är viktiga.",
+    "answer": "Social engineering handlar om att lura personer att göra saker som att ge ifrån sig inloggningar och dela information som är känslig eller kan vara till hjälp för en angripare. Det vanliga är phishing som kan göras via email eller SMS där personen uppmanas att göra något eller klicka på en länk. VAP står för \"Very attacked person\" och är en nyckelperson på ett företag som har tillgång till känsliga uppgifter och rätt behörighet. Ett problem är att dessa personer ibland enkelt kan identifieras via t.ex. Linkedin."
+  },
+  {
+    "question": "Hur kan en DDoS-attack genomföras och vad kan hända vid denna typ av attack?",
+    "answer": "Det är en överbelastningsattack där stora mängder trafik skickas till ett företags onlineplattformar vilket gör att de blir otillgängliga. Handlar om att störa trafiken och göra att plattformar inte kan användas. I en attack används ett botnet som är ett stort antal infekterade datorer eller enheter som kan fjärrstyras och vara en del i attacken. Finns även tjänster på Darknet där man kan köpa resurser för att genomföra en attack."
+  },
+  {
+    "question": "Beskriv CIA och DAD och hur de relaterar till varandra.",
+    "answer": "CIA beskriver företagets perspektiv och DAD beskriver angriparens. DAD står för Disclosure - Alteration - Destruction. Varje bokstav är kopplad till angrepp mot en av de tre delarna i CIA."
+  },
+  {
+    "question": "Vilka är de centrala faserna i en cyberattack? Beskriv dessa och vad de kan innehålla.",
+    "answer": "1. Samla in information: Handlar om att samla in så mycket information som möjligt som kan vara intressant för ett angrepp, t.ex. vilka anställda som finns, vilka system som finns, hostingplattformar m.m. 2. Analysera informationen: Handlar om att gå igenom all information och försöka hitta saker som kan användas för ett angrepp. Skanna ett företags miljö och identifiera servrar, programvaror/versioner (hitta gamla versioner med sårbarheter) och öppna portar (attackytan). 3. Testa och simulera: Kan vara hur vissa saker skall genomföras och man tar fram en plan för angreppet och simulerar med olika tekniker i en testmiljö (ofta med virtualisering och en skyddad miljö). 4. Genomföra angreppet: Handlar om att ta sig in och etablera sig och vara inne tillräckligt länge för att kunna nå de mål som finns. 5. Städa upp efter angreppet: Ta bort spår t.ex. genom att manipulera tider eller radera loggar."
+  },
+
+  {
+    "question": "Beskriv vad OSI modellen är och vilka olika delar som finns.",
+    "answer": "Det är en klassisk modell för att beskriv de olika lagren som finns i nätverkskommunika-tion. Det finns 7 lager och de tre lägsta handlar om hårdvara. De tre högsta lagren handlar om mjukvara och lager 4 är bryggan emellan dessa. I alla dessa lager finns säkerhetshot som man behöver ta hänsyn till."
+  },
+  {
+    "question": "Vad är TCP/IP, HTTP, HTTPS, TLS och Websockets? Beskriv hur de kan samverka.",
+    "answer": "Alla är protokoll som kan styra kommunikationen över nätverk. TCP/IP är ett protokoll på låg nivå som styr hur olika enheter hittar varandra via IP adressen. Ovanpå detta ligger andra protokoll som websockets som används för realtidsprogrammering(spel, chattar). HTTP är ett protokoll som används för webbapplikationer och ligger på en högre nivå. Denna kommunikation kan krypteras och då används TLS som är ett protokoll för detta. Kan användas både för HTTP (kallas HTTPS) och websockets."
+  },
+  {
+    "question": "Vad är en man-in-the-middle attack och hur kan den utföras?",
+    "answer": "Innebär att någon går in och läser av trafiken i ett nätverk. Den blir en mellanhand och använder det som kallas för packet sniffing. Används inte kryptering kan man läsa av en request i klartext."
+  },
+  {
+    "question": "Vad är symetrisk och asymetrisk kryptering? Beskriv hur HTTPS fungerar och vad som behövs för att sätta upp den typen av kommunikation.",
+    "answer": "Symetrisk kryptering är en enklare och snabbare form av kryptering som inte har den högsta säkerheten. Bygger på att en krypteringsnyckel skickas mellan klient och server. Asymetrisk kryptering är säkrare men inte lika bra bra prestanda som symmetrisk. Har en nyckel på klient och en på server som samverkar. HTTPS fungerar med båda dessa tekniker. En kommunikation sätta upp asymmetriskt och sedan körs kommunikationen symmetriskt.  En initieringsfas (handskakning) som använder asymmetrisk kryptering, och en dataöverföringsfas som använder symmetrisk kryptering. För den symmetriska krypteringen skapas en tillfällig sessionsnyckel. HTTPS kräver även ett certifikat som identifikation."
+  },
+  {
+    "question": "Nämn några saker som är viktiga när man genomför en säkerhetsstrategi kring nätverk för ett företag. Vad kan vara viktigt att tänka på?",
+    "answer": "Det handlar om att bygga upp säkerhet i flera lager (defense in depth) och arbeta med zero trust dvs utgår från att en angripare kan komma in och även ge användare least priviligue. Kan vara att segmentera nätverket och arbeta med VPN och liknande tekniker."
+  },
+
+  {
+    "question": "Beskriv hur authentication på frontendsidan kan hanteras på olika sätt. Vilka för- och nackdelar finns det med dessa sätt?",
+    "answer": "Authentication görs på backendsidan och det skickas tillbaka ett kvitto (en token) som visar att användaren är verifierad och vilken behörighet den har. En token skall hanteras på frontendsidan och det kan göras via cookies eller sessionstorage (cachningsfunktionlitet som finns inbyggt i webbläsaren). Nackdelen med cookies är att de kan stjälas (CSRF) och nackdelen med sessionstorage är att det går att läsa värden där med javascript (XSS). Det sätt som rekommenderas och anses som mest säkert är att använda cookies för att lagra en token. Dessa bör då sättas upp som httponly, secure och med samesite (strict eller lax)."
+  },
+  {
+    "question": "Vad är en XSS attack och hur kan den genomföras? Beskriv vad syftet ofta är med en sådan attack.",
+    "answer": "Det är en typ av angrepp som använder sårbarheter som kan finnas på webbsidor där man kan mata in flera rader text. Där kan det injectas dvs mata in skriptkod som man låter applikationen spara ned i en databas. Om säkerheten i applikationen inte är hög kan denna kod sedan köras när en webbsida renderas. Syftet är ofta att stjäla cookies eller komma åt känslig information som finns på klienten tex en token."
+  },
+  {
+    "question": "Vad är en CAPTCHA och hur kan den skapas och användas på frontendsidan? Vad är syftet med den?",
+    "answer": "Det är en typ av test som används på frontendsidan för att se till att det är människa som försöker utföra en åtgärd och inte en bot. Det kan vara ett antal bilder som skall kombineras eller ett antal bokstäver eller ett mattetal. Syftet är att förhindra angrepp som använder sig av automatiserade skript (botar) som kan testa många olika alternativ tex vid inloggningar."
+  },
+  {
+    "question": "Vad kan man göra i en applikation för att bygga in skydd mot XSS?",
+    "answer": "Används tekniker som tex React och Angular finns det en del inbyggt skydd som inte finns i Vanilla JS. Man bör undvika att använda innerHTML. Det finns olika tekniker för att sanera texten som matas in tex DOMpurify(externt bibliotek) eller Sanitizer (som är inbyggt). Det går även att använda CSP som är metataggar som läggs i headern på webbsidan och förhindrar viss inmatning av skadliga tecken."
+  },
+  {
+    "question": "Varför är det viktigt att tänka 'lita aldrig på klienten' när man bygger moderna webblösningar? Hur skall man tänka för att bygga säkra lösningar med både frontend och backend?",
+    "answer": "En grundregel är att klienten alltid kan manipuleras (assume breach) och när det kommer en request därifrån måste det alltid finns validering på backend även om frontend också har validering. Det innebär att bygga in flera lager i sin lösning (defense in depth). "
+  },
+
+  {
+    "question": "Vad innebär same origin policyn och vad är ett cross site request?",
+    "answer": "En cross site request är ett anrop mellan olika domäner. Ibland är detta nödvändigt tex när man har en öppen arkitektur med flera applikationer som ligger på olika domäner och som behöver prata med varandra. Det kan även vara en säkerhetsrisk eftersom en session kan bli kapad och man försöker komma åt en applikation från en annan domän.Alla webbläsare tillämpar default same origin policyn. Den säger att cross site requests inte är tillåtna utan blockeras."
+  },
+  {
+    "question": "Beskriv vad CORS är och hur det fungerar.",
+    "answer": "Det är en standard som tagits fram av W3C för hur cross site requests skall hanteras. Implementeras av webbläsare och hanteras genom att header skickas med i kommunikationen. Det går att sätta upp en CORS policy på en server där det anges vilka domäner som är tillåtna. Man kan 'vitlista' domäner och även vilka httpmetoder som tillåts."
+  },
+  {
+    "question": "Beskriv vad CSRF är och hur en sådan attack kan gå till",
+    "answer": "Står för Cross site request forgery attack. Innebär att man försöker stjäla en identitet. Förutsätter att en användare är inloggad på en sajt (A) och har en sessionscookie med en token. Samtidigt går man in och klickar på en skadlig länk tex genom phishing. Då skickas en request till angripares sajt (B) som ligger på en annan domän. Där skickas cookies med vilket gör att angriparen får tillgång till min identitet och kan använda den för att sedan skicka en skadlig request till sajt A. Om säkerheten på sajt A inte är tillräckligt bra kan detta lyckas."
+  },
+  {
+    "question": "Hur kan säkerheten sättas upp för att skydda mot en CSRF attack?",
+    "answer": "Det finns tre åtgärder som är viktiga och som kan användas. Det första är att skicka med en CSRF token från servern vilket gör att det går att se när anropet byter domän. Det andra är att sätta en cookie som Samesite (lax, strict) vilket gör att cookies inte kan skickas mellan olika domäner. Det tredje är att sätta upp en CORS policy på servern."
+  },
+  {
+    "question": "Vad är viktigt att tänka på i en frontend applikation när det gäller säkerhet?",
+    "answer": "Det två största typerna av angrepp är XSS och CSRF. Gäller att ha skydd mot båda dessa. Validering av input på klienten är viktigt (men även att det görs en extra gång på servern). Kan göras med SanitizerAPI (ny funktionaliet) eller DOMPurify(externt bibliotek). Viktigt att tänka på hur man hanterar tokens antingen via cookies eller sessionstorage."
+  },
+  {
+    "question": "Vad är en API gateway och hur kan den användas i en lösning med många api:er?",
+    "answer": "Används i lösningar där det finns många api:er. Istället för att varje api hanterar olika saker lägger man in en gemensam ingång till alla api:er. All trafik går genom denna api gateway innan den hamnar i varje api. "
+  },
+  {
+    "question": "Vad är Ocelot och vilken funktionalitet finns det att använda där?",
+    "answer": "Det är en .NET programvara för att sätta upp en api gateway. All konfiguration ligger i en gemensam konfig fil (ocelot.json). Den funktionalitet som finns där och kan användas för alla api:er är routing (intern och extern route), rate limiting (maxantal anrop för ett api under viss tid), lastbalansering (uttnyttja alla resurser maximalt vid hög belastning), gemensam authentication och authorization."
+  },
+  {
+    "question": "Beskriv vad SQL injection är, hur det fungerar och hur man kan skydda sig mot det.",
+    "answer": "Det är ett sätt att försöka manipulera databasen genom mata in sqlkod i textfält i en applikation. Sedan försöker man provocera applikationen att köra koden. Fungerar som XSS fast för sql kod. Det sätt man skyddar sig mot detta är att använda parametrar när koden körs mot databasen. Exempelvis EF arbetar på detta sättet. Viktigt också att validera inmatad text innan det sparas mot databasen."
+  },
+  {
+    "question": "Vad bör man tänka på för att skydda en databas ? Dels hur applikationer skrivs men även hur data lagras och hanteras.",
+    "answer": "Ett skydd är att använda DTO klasser. Läggs som ett lager ovanpå databasen och döljer den interna datastrukturen och skyddar mot överexponering av data(visa aldrig mer data än det som behövs).  En applikation har alltid ett konto(service account) som den loggar in mot databasen med. Viktigt med least privilege för detta konto. Viktigt att skydda känslig data genom kryptering (kan vara både at rest och at transfer). Viktigt med regelbundna backuper som läggs på säkra ställen. Använda en Identity provider om det går."
+  },
+  {
+    "question": "Vad är ett DMZ och vad är viktigt att tänka på kring databaser där?",
+    "answer": "Det är när ett företag både har externa applikationer och interna applikationer. Då läggs en yttre brandvägg mellan Internet och de externa servrarna och en inre brandvägg mellan de externa servrarna och de interna servrarna. Områden mellan brandväggarna kallas för DMZ. Viktigt att databaser ligger innanför den inre brandväggen och viktigt att man filtrerar trafiken i den inre brandväggen så att den bara släpper igenom trafik från dom externa servrarna och på de portar som skall användas."
+  },
+  {
+    "question": "Vad innebär application secrets och vad är viktigt att tänka på kring dessa i en applikation?",
+    "answer": "De flesta applikationer har känsliga värden som hanteras. Det kan vara lösenord, connectionsträngar, api-nycklar eller krypteringsnycklar. Dessa måste hanteras på ett säkert sätt. De får aldrig ligga direkt i koden eller hanteras via versionshantering. Skall ej heller läggas i konfigfiler eftersom dessa är enklare att komma åt. Skall ej hanteras via frontend utan bara på backendsidan. Det man bör göra är att lyfta ut dessa värden från applikationen och hantera via en säker tjänst."
+  },
+  {
+    "question": "Vad är Azure Keyvault och vilka är huvudsyftena med den tjänsten? Vad kan lagras i en keyvault?",
+    "answer": "Det är en tjänst som kan användas för att hantera secrets. Vanlig att använda när en applikation hostas på Azure. Alla molnplattformar har liknande tjänster och det finns även andra tjänster som är inriktade på detta. Huvudsyftena är att centralisera hanteringen av secrets och att hantera dessa på ett mer säkert sätt. Det som kan lagras är secrets, nycklar och certifikat. Vill man ha högsta säkerhetsnivå kan HSM moduler(en typ av krypterade diskar) användas i Azure keyvaults."
+  },
+  {
+    "question": "Vad är en supply chain och vad är skillnaden mellan direkt och transitivt beroende?",
+    "answer": "När man lägger på ett extern beroende tex ett nuget eller npm paket, skapas ett direkt beroende till det paketet. Men det paketet kan i sin tur vara beroende av andra paket. Detta kallas transitivt beronde (indirekt) och man får det på köpet. Det byggs upp en kedja med beroenden som kan bli ganska lång och som man ofta inte är medveten om från början. Denna kedja kallas för supply chain."
+  },
+  {
+    "question": "Vad är viktigt att tänka på kring hantering av externa beroenden i en applikation? Hur skall man skydda applikationen?",
+    "answer": "Det som är viktigt är att ha koll på vilka externa paket man använder och deras beroenden. Undvik extern paket om det inte behövs och man inte har full koll på paketet. Se alltid till att uppdatera till senaste versionen. Se till att uppdatera eller ta bort äldre paket som kan finnas i kod som skrevs för ett tag sedan. Var försiktig med Open Source kod och paket som bygger på det. Använd ett SCA verktyg som tex Github dependabot för att skanna av en kodbas och hitta sårbarheter och versioner som behöver uppdateras av olika paket."
+  },
+  {
+    "question": "Beskriv vad en Supply chain attack är och hur den kan genomföras.",
+    "answer": "Det är en attack som inte går direkt mot det företag som är målet. Istället går angreppet via den supply chain som företaget är beroende av . Genom att angripa en del av kedjan kan en angripare hitta ingångar till många företag på en gång tex för ransomware. Ju längre kedja desto större sårbarhet och attackyta för ett företag."
+  }
+]
