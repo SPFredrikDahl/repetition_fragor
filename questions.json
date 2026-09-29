@@ -165,5 +165,25 @@
   {
     "question": "Beskriv vad en Supply chain attack är och hur den kan genomföras.",
     "answer": "Det är en attack som inte går direkt mot det företag som är målet. Istället går angreppet via den supply chain som företaget är beroende av . Genom att angripa en del av kedjan kan en angripare hitta ingångar till många företag på en gång tex för ransomware. Ju längre kedja desto större sårbarhet och attackyta för ett företag."
+  },
+  {
+    "question": "Beskriv varför loggning är viktigt för säkerheten i en lösning",
+    "answer": "Det är viktigt ur två aspekter. Dels att kunna gå in i efterhand och se vad som har hänt tex efter ett angrepp. Kallas för accountability dvs spårbarhet. Det är även viktigt för att kunna koppla på olika övervakningssystem som larmar om det är aktivitet som avviker från det normala tex många misslyckade inloggningsförsök. Det mesta av detta kan styras via loggning."
+  },
+  {
+    "question": "Vad bör man tänka på kring loggning och vad skall loggas?",
+    "answer": "Viktigt att logga inloggningar och speciellt misslyckade inloggningar. Även viktigt att logga administrativa åtgärder som ändringar av viktig information, uppgradering av behörigheter. Att man tar bort data bör även loggas. Loggar skall inte innehålla känslig information som användarnamn eller inloggningsuppgifter. Loggar bör skyddas så att en angripare inte kan komma åt dom."
+  },
+  {
+    "question": "Varför att är en bra felhantering viktigt för säkerheten i en lösning?",
+    "answer": "Det är viktigt att hantera fel som uppstår så att inte data läcker genom systemmeddelanden. Det kan vara IP-adresser, databasnamn, sökvägar, användarnamn mm. Fel skall fångas upp och hanteras i alla situationer vilket kan göras med en global felhantering."
+  },
+  {
+    "question": "Hur bör man tänka kring felhantering när det gäller meddelanden mot användare och det utvecklaren ser?",
+    "answer": "Man bör skilja på det som användaren får se och det som utvecklaren behöver. Det skrivs 2 olika meddelanden. Till användaren skall det vara tydligt, generellt, neutralt och vänligt. Inga tekniska detaljer skall visas för användaren. Till utvecklare kan man skriva till en logg och de kan innehålla mer tekniska detaljer."
+  },
+  {
+    "question": "Vad innebär begreppet fail securely och vad är viktigt att tänka på ?",
+    "answer": "Det handlar om hur man hanterar fel i en applikation och att man aldrig låter en applikation krascha utan tar hand om felet innan dess. Det gör att en angripare inte kan provocera en applikation till att hamna i ett läge där den är sårbar och man inte har kontroll över den."
   }
 ]
