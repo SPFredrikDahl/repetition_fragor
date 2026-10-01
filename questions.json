@@ -185,5 +185,25 @@
   {
     "question": "Vad innebär begreppet fail securely och vad är viktigt att tänka på ?",
     "answer": "Det handlar om hur man hanterar fel i en applikation och att man aldrig låter en applikation krascha utan tar hand om felet innan dess. Det gör att en angripare inte kan provocera en applikation till att hamna i ett läge där den är sårbar och man inte har kontroll över den."
+  },
+  {
+    "question": "Vad är viktigt för ett företag som har digitala lösningar och som lagrar data? Vad bör man tänka på kopplat till lagar och säkerhet?",
+    "answer": "Det är viktigt att följa de lagar och bestämmelser som gäller annars kan det få stora konsekvenser tex böter eller skadestånd. Man är skyldig att själva ta reda på vad som gäller och vilka lagar som är aktuella. Beror på vad det är för typ av företag och vilken typ av information man arbetar med. Ledningen för företaget är den som har yttersta ansvaret."
+  },
+  {
+    "question": "Beskriv vad GDPR är och vilka krav det ställer när man bygger webblösningar.",
+    "answer": "Det står för General Data Protection Regulation och är en EU förordning (lag inom hela EU) som kom 2018. Styr hur man får hantera personuppgifter. Det som gäller är att man bara får lagra nödvändig data samt att man måste vara mycket transparant mot användarna (dom kan bergära ut uppgifter eller att få dessa raderade) och dom måste ge sitt samtycke. Detta sker i webbapplikationer genom meddelanden som användaren får och måste klicka 'JA' på när dom öppnar webbsajten. "
+  },
+  {
+    "question": "Vad är NIS2 och vilka krav ställer det på ett företag?",
+    "answer": "Det är ett EU direktiv (mål som EU sätter upp som alla länder får implementera i egna lagar) som infördes genom cybersäkerhetslagen januari 2026.  Gäller företag inom 18 samhällskritiska områden/sektorer. Mestadels medelstora/stora företag. Innebär större krav på incidenthantering, riskanalyser samt större ledningsansvar. Följer man inte detta kan man få stora böter."
+  },
+  {
+    "question": "Vad är PCI DSS och vad innebär det?",
+    "answer": "Det är inte en direkt lag men krav som ställs på företag som hanterar betalningar online. Framtagen av bla det stora kortföretagen som Visa och Mastercard. Ställer krav kring hur lösningarna ser ut tex beträffande säkerhet och kryptering."
+  },
+  {
+    "question": "Nämn några brott som man kan göra sig skyldig till vid en cyberattack. Vilka konsekvenser kan det få om man blir fälld?",
+    "answer": "Dataintrång (inbrott) innebär att man tar sig in i ett företags miljö utan att ha rätt till det. Vanligt är att logga in med stulna inloggningsuppgifter. Utpressning innebär att kräva pengar tex genom en ransomwareattack eller DDos attack. Skadegörelse innebär att förstöra data eller annan infrastruktur. Bedrägeri kan vara nätfiske eller att lura en användare att göra något som den inte har för avsikt att göra. Alla dessa brott kan ge fängelse i flera år (1-8) beroende på hur grova brotten anses vara. "
   }
 ]
