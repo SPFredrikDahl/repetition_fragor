@@ -205,5 +205,25 @@
   {
     "question": "Nämn några brott som man kan göra sig skyldig till vid en cyberattack. Vilka konsekvenser kan det få om man blir fälld?",
     "answer": "Dataintrång (inbrott) innebär att man tar sig in i ett företags miljö utan att ha rätt till det. Vanligt är att logga in med stulna inloggningsuppgifter. Utpressning innebär att kräva pengar tex genom en ransomwareattack eller DDos attack. Skadegörelse innebär att förstöra data eller annan infrastruktur. Bedrägeri kan vara nätfiske eller att lura en användare att göra något som den inte har för avsikt att göra. Alla dessa brott kan ge fängelse i flera år (1-8) beroende på hur grova brotten anses vara. "
+  },
+  {
+    "question": "Vad är ITIL och vilket förhållande har det till agila metoder som SCRUM?",
+    "answer": "Det är ett ramverk för hantering av leverans, förbättringar, planering och drift av ett IT-system. Används tillsammans med agila metoder som SCRUM och de kompletterar varandra. SCRUM används för att utveckla lösningen och ITIL för att leverera och drifta lösningen."
+  },
+  {
+    "question": "Beskriv några centrala områden inom ITIL. Var finns det kopplingar till säkerhet?",
+    "answer": "Handlar om att arbeta med och hantera säkerhet redan från början i processen. Incidenthantering där man hanterar de incidenter som dyker upp och har rutiner för hur detta skall göras. Om en incident upprepas många gånger lyfts det som ett problem och får högre prioritet. Man kontrollerar nya krav på förbättringar och ser till att de inte innebär att man bygger in sårbarheter i den befintliga lösningen."
+  },
+  {
+    "question": "Vad är DevOps och vad är tanken med det?",
+    "answer": "Det handlar om att effektivisera processen kring kodning, versionshantering, testning och nya releaser. Det görs genom att automatisera den så mycket som möjligt. Genom att få bort manuellt arbete kan man öka hastigheten och få bättre kvalitet. Man kan även lägga in olika kontroller i processen och köra automatiserade tester."
+  },
+  {
+    "question": "Vad innebär CI/CD och pipelines?",
+    "answer": "Det är de två huvuddelarna i DevOps processen. CI= continious integration handlar om att koda och testa koden så att den motsvarar kraven. CD= continious delivery handlar om hur man releasar den färdigtestade koden."
+  },
+  {
+    "question": "Vad innebär DevSecOps och vad är skillnaden mot Devops?",
+    "answer": "Det innebär att man bygger in kontroller av säkerhet i Devops processen. Det kan vara kontroller av tredjepartsbibliotek och deras sårbarheter eller säkerhetstestning av applikationen. I dessa situationer används speciella verktyg som kopplas på Devops processen. "
   }
 ]
